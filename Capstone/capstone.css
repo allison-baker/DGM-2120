@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #023047;
+    --mid-blue: #487D97;
+    --light-blue: #90B3C4;
+    --orange: #DB7500;
+    --yellow: #FFB703;
+    --gray: #F7F7F7;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: var(--gray);
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+
+/* Header styling */
+header {
+    background-color: var(--dark-blue);
+    padding: 1.5rem 2%;
+    display: flex;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2%;
+}
+
+header h1 {
+    color: var(--yellow);
+    padding: 0;
+}
+
+header p {
+    color: white;
+}
+
+
+/* Nav styling */
+
+/* Vertical screens */
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: white;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 2vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        background-color: var(--mid-blue);
+        background-image: linear-gradient(var(--mid-blue), #2d4d5d);
+        font-weight: 500;
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0.5rem 0;
+    }
+
+    nav .active a {
+        background-color: var(--orange);
+        background-image: linear-gradient(var(--orange), #894900);
+        color: white;
+    }
+}
+
+/* Horizontal screens */
+@media only screen and (min-width: 801px) {    
+    nav {
+        background-color: var(--mid-blue);
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0 2%;
+        display: flex;
+    }
+    
+    nav a {
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: 500;
+        display: block;
+        padding: 0.83rem 2rem;
+    }
+    
+    nav .active a {
+        background-color: var(--orange);
+    }
+    
+    nav a:hover {
+        color: var(--yellow);
+    }
+
+    nav .active a:hover {
+        color: var(--dark-blue);
+    }
+}
+
+
+/* Main styling */
+main {
+    background-color: white;
+    padding: 0 2%;
+    min-height: 68vh;
+}
+
+main h1 {
+    color: var(--orange);
+}
+
+main p {
+    padding-bottom: 1rem;
+}
+
+main h2 {
+    color: var(--mid-blue);
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+/* Home page */
+main .heroimg {
+    padding-top: 1rem;
+}
+
+main .testimonial-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main .testimonial-tile {
+    max-width: 32rem;
+    text-align: center;
+    color: var(--dark-blue);
+    background-color: var(--gray);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+main .testimonial-tile p {
+    padding: 0;
+}
+
+main .page-gallery {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+main .page-tile {
+    text-decoration: none;
+    margin: 1rem;
+}
+
+main .page-tile figure:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+main .page-tile figure {
+    background-color: var(--light-blue);
+}
+
+main .page-tile img {
+    padding: 0;
+}
+
+main .page-tile figcaption {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.75rem 0 1rem 0;
+    color: white;
+}
+
+/* Vertical screens */
+@media only screen and (max-width: 800px) {
+    main iframe {
+        height: 300px;
+    }
+}
+
+/* Destinations page */
+main .destination-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    justify-content: space-around;
+}
+
+main .destination-tile {
+    max-width: 30rem;
+    margin: 1rem 0.5rem;
+    background-color: var(--gray);
+    padding: 0.5rem;
+    border: 1px solid var(--light-blue);
+    border-radius: 10px;
+}
+
+main .destination-tile img {
+    border-radius: 10px;
+}
+
+main .destination-tile figcaption {
+    text-align: center;
+    color: var(--dark-blue);
+    padding: 0.75rem 0 0.6rem 0;
+}
+
+/* Packages page */
+main .packages-label {
+    padding: 0;
+}
+
+main .packages-gallery {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+main .package-tile {
+    background-color: var(--gray);
+    display: flex;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    align-items: center;
+}
+
+main .package-tile img {
+    height: 100%;
+    width: auto;
+    border-radius: 15px 0 0 15px;
+}
+
+main .info-tile {
+    padding: 0 2%;
+}
+
+main .info-tile a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+main .info-tile a:hover {
+    color: var(--mid-blue);
+}
+
+main .info-tile strong {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+/* Contact page */
+.contact-form fieldset {
+    border: 1px solid var(--light-blue);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-form legend {
+    color: var(--dark-blue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.contact-form label {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.contact-form p {
+    margin: 1rem 0.5rem;
+    padding: 0;
+}
+
+.contact-form label, .contact-form select, .contact-form [type=text], .contact-form [type=tel],
+.contact-form [type=email], .contact-form textarea {
+    display: block;
+}
+
+.contact-form select, .contact-form [type=text], .contact-form [type=tel], .contact-form [type=email],
+.contact-form textarea {
+    border: 1px solid var(--mid-blue);
+    padding: 0.3rem;
+    width: 20rem;
+    border-radius: 5px;
+    color: var(--dark-blue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.contact-form select {
+    background-color: white;
+}
+
+.contact-form textarea {
+    height: 6rem;
+}
+
+.contact-form :required {
+    background-color: rgba(178, 124, 76, 0.15);
+}
+
+.contact-form [type=submit] {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Make input fields full width of vertical screens */
+@media only screen and (max-width: 600px) {
+    .contact-form select, .contact-form [type=text], .contact-form [type=tel], .contact-form [type=email],
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+
+/* Footer styling */
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+
+/* Full page styling */
+header, nav, main, footer {
+    max-width: 70rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leave me feedback for how to improve my site!" />
+    <meta name="author" content="Al Baker" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <title>Photography Guide for Beginners: Suggestions for Me</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="https://allisonbakerphoto.wixsite.com/allisonbakerphoto" target="_blank" rel="noopener"
+        ><img src="images/Logo_Mark_White.png" alt="white business logo" width="82" height="100" loading="lazy"
+      /></a>
+      <div>
+        <h1>Photography Guide for Beginners</h1>
+        <p>Everything you Need to Know to get Your Photography Business Started</p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how_to.html">Using Your Camera</a></li>
+        <li><a href="posing.html">Posing</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li class="active"><a href="feedback.html">Suggestions For Me</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Suggestions for Me</h1>
+
+      <form method="get" class="suggestions-form" action="thanks.html">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label>
+            First Name*: <input type="text" name="fname" required />
+          </label>
+          <label>
+            Last Name*: <input type="text" name="lname" required />
+          </label>
+          <label>
+            Email Address*: <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Phone*: <input type="tel" name="phone" required />
+          </label>
+          <p>Is this a cell number that can receive text messages?</p>
+          <label> 
+            <input type="radio" name="isCell" value="true" /> Yes
+          </label>
+          <label> 
+            <input type="radio" name="isCell" value="false" /> No
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>How Would You Like Me to Contact You About Your Feedback?</legend>
+          <label>
+            <input type="checkbox" name="byCall" value="chosen" /> Phone Call
+          </label>
+          <label>
+            <input type="checkbox" name="byText" value="chosen" /> Text Message
+          </label>
+          <label>
+            <input type="checkbox" name="byEmail" value="chosen" /> Email
+          </label>
+          <label>
+            <input type="checkbox" name="noContact" value="chosen" /> I do not wish to be contacted
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Feedback</legend>
+          <label>What Type of Suggestion do You Have For Me?
+            <select>
+              <option value="none">Please Select</option>
+              <option value="correction">Correction of incorrect info on my site</option>
+              <option value="addition">Something you think I should add to my site</option>
+              <option value="usability">A suggestion about my site usability or layout</option>
+              <option value="other">Other (Please elaborate in the text area below)</option>
+            </select>
+          </label>
+
+          <label>Your Suggestion*:
+            <textarea name="suggestion" required>Leave your feedback here!</textarea>
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Send Me Your Feedback" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2022 &bull; Al Baker &bull; Allison Baker Photography</p>
+    </footer>
+  </body>
+</html>

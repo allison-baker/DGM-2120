@@ -1,0 +1,225 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #272727;
+    margin: 0;
+    background-color: #f1f1f1;
+    line-height: 150%;
+}
+
+/* Header stuff here */
+header {
+    background-color: #0f7173;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header h1, header p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    padding-bottom: 1rem;
+    letter-spacing: 0.075rem;
+}
+
+header img {
+    width: 5rem;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+/* Nav stuff here */
+nav {
+    background-color: #c4ddcf;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 2%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #272727;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    padding: 0.83rem 2rem;
+}
+
+nav li.active a {
+    color: #c4ddcf;
+    background-color: #272727;
+}
+
+nav a:hover {
+    color: #b24c63;
+}
+
+/* Main stuff here */
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+main h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #b24c63;
+    margin-bottom: 1.5rem;
+}
+
+main h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #0f7173;
+    margin-top: 2.5rem;
+}
+
+main p {
+    color: #272727;
+}
+
+main strong {
+    color: #0f7173;
+}
+
+main ul, main ol {
+    font-size: 0.9rem;
+    line-height: 125%;
+}
+
+main ul li {
+    list-style: square;
+    margin-bottom: 0.5rem;
+}
+
+main ol li {
+    list-style: lower-roman;
+    margin-bottom: 0.5rem;
+}
+
+figure#about-box {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#second-nav {
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+}
+
+#second-nav li {
+    list-style: none;
+    display: block;
+    padding: 0.83rem 2rem;
+    background-color: #c4ddcf;
+    margin: 0 2rem 0 0;
+    border: 2px solid #272727;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#second-nav a {
+    color: #272727;
+    text-decoration: none;
+}
+
+.source {
+    font-size: 0.8rem;
+}
+
+figure#camera {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+main dl {
+    background-color: #f1f1f1;
+    padding: 1rem 0 1rem 1.5rem;
+    border-radius: 1rem;
+    width: 65%;
+}
+
+main dt {
+    color: #b24c63;
+    font-weight: 700;
+}
+
+main dd {
+    font-size: 0.9rem;
+}
+
+main address {
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+#socials-box {
+    padding: 1rem 0;
+}
+
+#socials-box p {
+    margin: 0;
+}
+
+main a {
+    color: #b24c63;
+}
+
+main a:hover {
+    color: #0f7173;
+}
+
+#top-button {
+    font-size: 0.8rem;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer stuff here */
+footer {
+    background-color: #0f7173;
+    color: #fff;
+    padding: 0.3rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    clear: both;
+}
+
+/* Mobile responsive design for image layouts */
+@media only screen and (max-width: 715px) {
+    #second-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 7rem;
+    }
+}

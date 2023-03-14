@@ -1,0 +1,371 @@
+:root {
+    --my-teal: #0f7173;
+    --my-light-gray: #f1f1f1;
+    --my-light-green: #c4ddcf;
+    --my-dark-gray: #272727;
+    --my-pink: #b24c63;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--my-dark-gray);
+    margin: 0;
+    background-color: var(--my-light-gray);
+    background-image: linear-gradient(to bottom, white, var(--my-light-gray));
+    line-height: 150%;
+}
+
+/* Header stuff here */
+header {
+    background-color: var(--my-teal);
+    display: flex;
+    align-items: center;
+    padding: 1rem 3%;
+}
+
+header div {
+    padding-left: 3%;
+}
+
+header h1, header p {
+    margin: 0;
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    padding-bottom: 1rem;
+    letter-spacing: 0.075rem;
+}
+
+/* Fix header text wrap overlap on vertical screens */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        line-height: 3rem;
+    }
+}
+
+/* Nav stuff here */
+nav {
+    background-color: var(--my-light-green);
+}
+
+/* Vertical screens */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 2vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--my-dark-gray);
+        font-weight: 700;
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+        border-bottom: solid 1px var(--my-dark-gray);
+    }
+
+    nav .active a {
+        background-color: var(--my-dark-gray);
+        background-image: linear-gradient(var(--my-dark-gray), black);
+        color: var(--my-light-green);
+    }
+}
+
+/* Horizontal screens */
+@media only screen and (min-width: 601px) {    
+    nav ul {
+        list-style: none;
+        padding: 0 2%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav a {
+        color: var(--my-dark-gray);
+        font-size: 1.1rem;
+        text-decoration: none;
+        font-weight: 700;
+        display: block;
+        padding: 0.83rem 2rem;
+    }
+    
+    nav .active a {
+        color: var(--my-light-green);
+        background-color: var(--my-dark-gray);
+    }
+    
+    nav a:hover {
+        color: var(--my-pink);
+    }
+}
+
+
+/* Main stuff here */
+main {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+main h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--my-pink);
+    margin-bottom: 1.5rem;
+}
+
+main h2 {
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--my-teal);
+    margin-top: 2.5rem;
+}
+
+main p {
+    color: var(--my-dark-gray);
+}
+
+main strong {
+    color: var(--my-teal);
+}
+
+main ul, main ol {
+    font-size: 0.9rem;
+    line-height: 125%;
+}
+
+main ul li {
+    list-style: square;
+    margin-bottom: 0.5rem;
+}
+
+main ol li {
+    list-style: lower-roman;
+    margin-bottom: 0.5rem;
+}
+
+.me-pic {
+    width: 100%;
+    height: auto;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.second-nav {
+    display: flex;
+    margin-left: 0;
+    padding: 0;
+}
+
+.second-nav li {
+    list-style: none;
+    display: block;
+    padding: 0.83rem 2rem;
+    background-color: var(--my-light-green);
+    margin: 0 2rem 0 0;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.second-nav a {
+    color: var(--my-dark-gray);
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.source {
+    font-size: 0.8rem;
+}
+
+.camera-box figure {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+main dl {
+    background-color: var(--my-light-gray);
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-radius: 1rem;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+main dt {
+    color: var(--my-pink);
+    font-weight: 700;
+}
+
+main dd {
+    font-size: 0.9rem;
+}
+
+main address {
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+#socials-box {
+    padding: 1rem 0;
+}
+
+#socials-box p {
+    margin: 0;
+}
+
+main a {
+    color: var(--my-pink);
+}
+
+main a:hover {
+    color: var(--my-teal);
+}
+
+#top-button {
+    font-size: 0.8rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.suggestions-form fieldset {
+    border: 1px solid var(--my-teal);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.suggestions-form legend {
+    color: var(--my-teal);
+    font-size: 0.9rem;
+}
+
+.suggestions-form label {
+    margin: 0.5rem;
+}
+
+.suggestions-form p {
+    margin-left: 0.5rem;
+}
+
+.suggestions-form label, .suggestions-form select, .suggestions-form [type=text], .suggestions-form [type=tel],
+.suggestions-form [type=email], .suggestions-form textarea {
+    display: block;
+}
+
+.suggestions-form select, .suggestions-form [type=text], .suggestions-form [type=tel], .suggestions-form [type=email],
+.suggestions-form textarea {
+    border: 1px solid var(--my-dark-gray);
+    padding: 0.3rem;
+    width: 15rem;
+    border-radius: 5px;
+    color: var(--my-dark-gray);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}
+
+/* Fix input forms width extending past width of parent container on vertical screens */
+@media only screen and (max-width: 600px) {
+    .suggestions-form select, .suggestions-form [type=text], .suggestions-form [type=tel], .suggestions-form [type=email],
+    .suggestions-form textarea {
+        width: 100%;
+    }
+}
+
+.suggestions-form select {
+    background-color: #fff;
+}
+
+.suggestions-form textarea {
+    height: 6rem;
+}
+
+.suggestions-form :required {
+    background-color: rgba(178, 76, 99, 0.15);
+}
+
+.suggestions-form [type=submit] {
+    font-family: 'Fjalla One', sans-serif;
+    background-color: var(--my-light-green);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: var(--my-dark-gray);
+    margin: 1rem 0 0 1vw;
+}
+
+/* Footer stuff here */
+footer {
+    background-color: var(--my-teal);
+    color: #fff;
+    padding: 0.3rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    clear: both;
+}
+
+/* Full page styling */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+/* Mobile responsive design */
+@media only screen and (max-width: 800px) {
+    main {
+        width: 100%;
+    }
+    
+    .second-nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 7rem;
+    }
+
+    .second-nav li {
+        margin: 0;
+        width: 60%;
+    }
+
+    .camera-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .camera-box figure {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main dl {
+        width: 100%;
+    }
+
+    .suggestions-form [type=submit] {
+        margin: 0 auto;
+    }
+}
