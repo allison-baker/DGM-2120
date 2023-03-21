@@ -113,16 +113,20 @@ p {
 
 .links-grid div {
     margin: 1rem 0;
-    background-color: var(--dark-green);
 }
 
-.links-grid a {
+.links-grid div a {
     text-decoration: none;
     display: block;
     padding: 1.5rem 0;
     width: 18rem;
     text-align: center;
     color: var(--my-white);
+    background-color: var(--dark-green);
+}
+
+.links-grid div a:hover {
+    background-color: var(--light-green);
 }
 
 /* Footer styling */
