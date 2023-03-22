@@ -91,7 +91,7 @@ main, header, nav, footer {
 main {
     padding: 0 2%;
     background-color: var(--my-white);
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 h2 {
